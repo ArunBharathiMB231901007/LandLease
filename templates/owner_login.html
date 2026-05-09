@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+    <h2>Owner Login</h2>
+    <form method="POST">
+        <div class="form-group"><label>Phone</label><input name="phone" required></div>
+        <div class="form-group"><label>Password</label><input name="password" type="password" required></div>
+        <button class="btn btn-green" type="submit">Login</button>
+    </form>
+    <p style="margin-top:10px"><a href="/owner_register">New owner? Register here</a></p>
+</div>
+{% endblock %}

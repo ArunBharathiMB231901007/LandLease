@@ -1,0 +1,42 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f5f5f5; color: #333; }
+a { color: #2e7d32; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.navbar { background: #2e7d32; padding: 14px 30px; display: flex; justify-content: space-between; align-items: center; }
+.navbar .brand { color: #fff; font-size: 20px; font-weight: bold; }
+.navbar .links a { color: #fff; margin-left: 18px; font-size: 14px; }
+
+.container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+
+.card { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 30px; margin-bottom: 20px; }
+.card h2 { margin-bottom: 20px; color: #2e7d32; }
+
+.form-group { margin-bottom: 14px; }
+.form-group label { display: block; margin-bottom: 4px; font-weight: bold; font-size: 14px; }
+.form-group input, .form-group select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; }
+
+.btn { display: inline-block; padding: 10px 24px; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; text-decoration: none; }
+.btn-green { background: #2e7d32; color: #fff; }
+.btn-green:hover { background: #256d28; text-decoration: none; }
+.btn-red { background: #c62828; color: #fff; }
+.btn-red:hover { background: #a52222; text-decoration: none; }
+.btn-blue { background: #1565c0; color: #fff; }
+.btn-blue:hover { background: #0d47a1; text-decoration: none; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+table th, table td { padding: 10px; border: 1px solid #ddd; text-align: left; font-size: 14px; }
+table th { background: #f0f0f0; }
+
+.hero { text-align: center; padding: 60px 20px; }
+.hero h1 { font-size: 32px; color: #2e7d32; margin-bottom: 10px; }
+.hero p { font-size: 16px; color: #666; margin-bottom: 30px; }
+.hero .btn { margin: 6px; }
+
+.msg-box { text-align: center; padding: 40px; }
+.msg-box p { font-size: 18px; margin-bottom: 20px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.land-card { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 20px; }
+.land-card h3 { color: #2e7d32; margin-bottom: 8px; }
+.land-card p { margin-bottom: 6px; font-size: 14px; color: #555; }

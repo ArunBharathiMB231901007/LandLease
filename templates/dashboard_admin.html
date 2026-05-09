@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+    <h2>Admin Dashboard</h2>
+
+    <h3 style="margin-top:20px">Pending Owners</h3>
+    {% if owners %}
+    <table>
+        <tr><th>ID</th><th>Name</th><th>Phone</th><th>Aadhaar</th><th>Patta</th><th>EC</th><th>Action</th></tr>
+        {% for o in owners %}
+        <tr>
+            <td>{{ o[0] }}</td><td>{{ o[1] }}</td><td>{{ o[2] }}</td>
+            <td>{{ o[4] }}</td><td>{{ o[5] }}</td><td>{{ o[6] }}</td>
+            <td>
+                <a href="/approve_owner/{{ o[0] }}" class="btn btn-green" style="padding:4px 12px;font-size:12px">Approve</a>
+                <a href="/reject_owner/{{ o[0] }}" class="btn btn-red" style="padding:4px 12px;font-size:12px">Reject</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}<p>No pending owners.</p>{% endif %}
+
+    <h3 style="margin-top:30px">Pending Lands</h3>
+    {% if lands %}
+    <table>
+        <tr><th>ID</th><th>Owner ID</th><th>Location</th><th>Price/hr</th><th>Action</th></tr>
+        {% for l in lands %}
+        <tr>
+            <td>{{ l[0] }}</td><td>{{ l[1] }}</td><td>{{ l[2] }}</td><td>₹{{ l[3] }}</td>
+            <td>
+                <a href="/approve_land/{{ l[0] }}" class="btn btn-green" style="padding:4px 12px;font-size:12px">Approve</a>
+                <a href="/reject_land/{{ l[0] }}" class="btn btn-red" style="padding:4px 12px;font-size:12px">Reject</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}<p>No pending lands.</p>{% endif %}
+
+    <h3 style="margin-top:30px">All Bookings</h3>
+    {% if bookings %}
+    <table>
+        <tr><th>ID</th><th>User ID</th><th>Land ID</th><th>Hours</th><th>Amount</th><th>Payment</th></tr>
+        {% for b in bookings %}
+        <tr><td>{{ b[0] }}</td><td>{{ b[1] }}</td><td>{{ b[2] }}</td><td>{{ b[3] }}</td><td>₹{{ b[4] }}</td><td>{{ b[5] }}</td></tr>
+        {% endfor %}
+    </table>
+    {% else %}<p>No bookings yet.</p>{% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandLease - Temporary Land Leasing</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/" class="brand">LandLease</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/owner_login">Owner</a>
+            <a href="/user_login">User</a>
+            <a href="/admin_login">Admin</a>
+            <a href="/logout">Logout</a>
+        </div>
+    </nav>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

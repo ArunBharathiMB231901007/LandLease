@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+    <h2>Book Land - {{ land[2] }}</h2>
+    <p>Price: ₹{{ land[3] }} per hour</p>
+    <form method="POST" style="margin-top:16px">
+        <div class="form-group"><label>Number of Hours</label><input name="hours" type="number" min="1" required></div>
+        <p style="margin-bottom:12px; color:#666">Payment Number: <strong>9876543210</strong></p>
+        <button class="btn btn-green" type="submit">Confirm Booking</button>
+    </form>
+</div>
+{% endblock %}
