@@ -1,0 +1,34 @@
+## LandLease – Project Description
+
+LandLease is a web-based application developed to simplify and modernize the land leasing process for landowners and tenants. The system provides a secure and user-friendly platform where users can list available land properties, search for suitable land, and manage lease-related information digitally.
+
+The project is designed using **HTML, CSS, and JavaScript** for the frontend interface, **Flask** as the backend framework, and **SQLite** as the database for storing user and property information. The application focuses on creating an efficient and transparent leasing system without relying on external APIs.
+
+Landowners can add land details such as location, land type, size, price, and availability, while tenants can browse listings and contact owners through the platform. The system also includes user authentication, property management, and lease request handling features to improve communication and reduce manual paperwork.
+
+### Objectives
+
+* Simplify the land leasing process
+* Provide a centralized platform for landowners and tenants
+* Reduce paperwork and manual management
+* Improve transparency and accessibility
+* Create a responsive and easy-to-use web application
+
+### Technologies Used
+
+* **Frontend:** HTML, CSS, JavaScript
+* **Backend:** Flask (Python)
+* **Database:** SQLite
+
+### Features
+
+* User registration and login
+* Add, edit, and delete land listings
+* Search and view available lands
+* Lease request management
+* Responsive user interface
+* Secure data storage using SQLite
+
+### Expected Outcome
+
+The LandLease project provides a reliable and efficient digital solution for managing land lease activities. It enhances communication between landowners and tenants while offering a simple and accessible platform for property leasing management.
