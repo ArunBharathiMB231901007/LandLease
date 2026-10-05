@@ -1,0 +1,42 @@
+If you want **only the Windows Docker commands to install/start Eramba using the existing `.yml`**, use:
+
+### PowerShell
+
+```powershell
+cd D:\eramba\docker
+docker compose -f docker-compose.simple-install.yml pull
+docker compose -f docker-compose.simple-install.yml up -d
+```
+
+### Check containers
+
+```powershell
+docker compose -f docker-compose.simple-install.yml ps
+```
+
+### View logs
+
+```powershell
+docker compose -f docker-compose.simple-install.yml logs -f
+```
+
+### Stop Eramba
+
+```powershell
+docker compose -f docker-compose.simple-install.yml down
+```
+
+**Do not use `down -v`** because that can remove the database volume.
+
+### Open Eramba
+
+```text
+https://localhost:8443
+```
+
+If the `.yml` is already downloaded and images are already present, you only need:
+
+```powershell
+cd D:\eramba\docker
+docker compose -f docker-compose.simple-install.yml up -d
+```
